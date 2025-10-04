@@ -33,12 +33,6 @@ const Services = () => {
       description: "Implement DevOps best practices with automated testing, continuous integration, deployment pipelines, and monitoring solutions.",
       features: ["Jenkins CI/CD", "Automated Testing", "GitOps Workflows", "Monitoring & Logging"],
     },
-    {
-      icon: Palette,
-      title: "Technical Consultation",
-      description: "Provide expert guidance on technology stack selection, architecture design, and best practices for scalable application development.",
-      features: ["Architecture Planning", "Tech Stack Selection", "Code Review", "Best Practices"],
-    },
   ];
 
   return (

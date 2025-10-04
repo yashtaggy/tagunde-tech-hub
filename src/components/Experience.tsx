@@ -98,7 +98,7 @@ const Experience = () => {
         <div className="mt-12 text-center">
           <Card className="max-w-2xl mx-auto p-6 bg-gradient-primary text-primary-foreground">
             <p className="text-lg">
-              🚀 Open to new opportunities and collaborations in AI, Cloud Computing, and Full-Stack Development
+             Open to new opportunities and collaborations in AI, Cloud Computing, and Full-Stack Development
             </p>
           </Card>
         </div>

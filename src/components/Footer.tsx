@@ -70,9 +70,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2 flex-wrap">
-            © {currentYear} Yash Bharat Tagunde. Built with
-            <Heart className="h-4 w-4 text-red-500 fill-red-500" />
-            using React, TypeScript & Tailwind CSS
+            © {currentYear} Yash Bharat Tagunde.
           </p>
         </div>
       </div>

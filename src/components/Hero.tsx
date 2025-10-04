@@ -30,7 +30,7 @@ const Hero = () => {
             </div>
             
             <p className="text-lg text-foreground/80 leading-relaxed max-w-xl">
-              BTech Computer Science student specializing in AI & Edge Computing. 
+              BTech Final Year Computer Science student specializing in AI & Edge Computing. 
               Passionate about building intelligent applications, deploying scalable cloud solutions, 
               and leveraging DevOps practices to create impactful technology.
             </p>

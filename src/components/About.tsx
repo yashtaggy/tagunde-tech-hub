@@ -45,7 +45,7 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-foreground/80 leading-relaxed">
               <p>
-                I'm Yash Bharat Tagunde, a 4th-year Computer Science undergraduate at MIT ADT University, 
+                I'm Yash B. Tagunde, a 4th-year Computer Science undergraduate at MIT ADT University, 
                 specializing in AI & Edge Computing. With a strong foundation in programming and a passion 
                 for artificial intelligence, I've dedicated myself to mastering cutting-edge technologies.
               </p>
@@ -71,7 +71,9 @@ const About = () => {
                 <Award className="h-5 w-5 text-secondary" />
                 <h4 className="text-lg font-semibold">Certifications</h4>
               </div>
+              <p className="text-foreground/80">AWSAcademyGraduate – Cloud Development</p>
               <p className="text-foreground/80">DELF B2 in French Language</p>
+              <p className="text-foreground/80"> Structuring Machine Learning Projects(Coursera)</p>
             </div>
 
             <div>
