@@ -57,15 +57,14 @@ const Hero = () => {
                 View My Work
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => handleNavClick("#contact")}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              <a
+                href="/YashTagunde_v4.pdf"
+                download="YashTagundev4.pdf"
+                className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium border border-primary text-primary rounded-xl hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
-                <Download className="mr-2 h-5 w-5" />
+              <Download className="mr-2 h-5 w-5" />
                 Download CV
-              </Button>
+              </a>
             </div>
 
             {/* Social Links */}

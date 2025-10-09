@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
   const { toast } = useToast();
@@ -16,11 +18,31 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
+  
+    // Send form via EmailJS
+    emailjs
+      .send(
+        "service_42ak15f",      // replace with your EmailJS service ID
+        "template_tzbkswp",     // replace with your EmailJS template ID
+        formData,               // object with { name, email, message }
+        "Ucu4qveviLvcCTzGo"       // replace with your EmailJS public key
+      )
+      .then(
+        () => {
+          toast({
+            title: "Message Sent!",
+            description: "Thank you for reaching out. I'll get back to you soon.",
+          });
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          toast({
+            title: "Error",
+            description: "Something went wrong. Please try again.",
+          });
+          console.error("EmailJS error:", error);
+        }
+      );
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
